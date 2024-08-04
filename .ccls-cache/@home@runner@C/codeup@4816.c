@@ -11,7 +11,6 @@ int main(void) {
   if (time != 0) {
     printf("-1");
   } else {
-    printf("%d %d %d", a, b, c);
-  }
+    printf("%d %d %d", a, b, c); }
   return 0;
 }
