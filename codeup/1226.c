@@ -1,49 +1,47 @@
 #include <stdio.h>
-
 int main(void) {
+  int num[8];
   int n[7];
-  int a[6];
-  int i,j,sum=0;
-
-  for(i=1; i<=7; i++) {
-    scanf("%d", &n[i]);
+  int i, j, s = 0, seven = 0;
+  for (i = 1; i < 8; i++) {
+    scanf("%d ", &num[i]);
   }
-  for(j=1; j<=6; j++) {
-      scanf("%d", &a[j]);
-    }
 
-  for(i=1; i<=7; i++) {
-    for(j=1; j<=6; j++) {
-      if(i==7 && sum==5) {
-        if(n[i] == a[j]) {
-          sum+=2;
-        }
-        break;
-      } else{break;}
+  for (j = 1; j < 7; j++) {
+    scanf("%d", &n[j]);
+  }
 
-      if(n[i] == a[j]) {
-        sum++;
+  for (i = 1; i < 7; i++) {
+    for (j = 1; j < 8; j++) {
+      if (n[i] == num[j]) {
+        if (j == 7)
+          seven++;
+        else
+          s++;
       }
     }
   }
 
-  switch (sum) {
-    case 6:
-      printf("1");
-      return 0;
-    case 7:
+  switch (s) {
+  case 6:
+    printf("1");
+    break;
+
+  case 5:
+    if (seven == 1) {
       printf("2");
-      return 0;
-    case 5:
+    } else {
       printf("3");
-      return 0;
-    case 4:
-      printf("4");
-      return 0;
-    case 3:
-      printf("5");
-      return 0;
+    }
+    break;
+  case 4:
+    printf("4");
+    break;
+  case 3:
+    printf("5");
+    break;
+  default:
+    printf("0");
+    break;
   }
-  printf("0");
-  return 0;
 }
