@@ -5,7 +5,6 @@ int main(void) {
   for (int i = a; i <= b; i++) {
     if (i % 2 != 0) {
       printf("%d ", i);
-      //미완성
     }
   }
   return 0;
