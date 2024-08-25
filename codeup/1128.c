@@ -2,5 +2,4 @@
 int main(void) {
   unsigned int n;
   scanf("%u", &n);
-  printf("%lld", n * 123456789LL);
-}
+  printf("%lld", n * 123456789LL); }

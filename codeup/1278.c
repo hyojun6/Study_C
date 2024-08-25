@@ -8,7 +8,6 @@
 //   printf("%d", num);
 //   return 0;
 // }
-
 #include <stdio.h>
 
 int main(void) {
@@ -20,5 +19,4 @@ int main(void) {
 
     printf("%d\n", num);
 
-    return 0;
-}
+    return 0; }
