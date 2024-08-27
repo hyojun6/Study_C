@@ -35,6 +35,8 @@ int main(void) {
     num=i;
     f(i);
   } 
+
+  
   printf("%lld %lld", result_num, max_length);
   return 0;
 }
