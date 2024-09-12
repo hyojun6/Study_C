@@ -1,17 +1,16 @@
 #include <stdio.h>
-int result = 1;
 
 int f(int a) {
-  if(a!=0) {
-    result*=a;
-    f(a-1);
+  if(a==1) {
+    return 1;
+  } else {
+    return (a*f(a-1));
   }
 }
 
 int main(void) {
   int a;
   scanf("%d", &a);
-  f(a);
-  printf("%d", result);
+  printf("%d", f(a));
   return 0;
 }
