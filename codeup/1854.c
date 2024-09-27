@@ -14,12 +14,11 @@
 #include <stdio.h>
 
 int f(char *a) {
-  int i=0;
-  return (a[i]=='\0') ? 0 : a[i]+a[++i];
+    return (*a == '\0') ? 0 : (*a - '0') + f(a+1);
 }
 
 int main(void) {
-    char a[1000];
+    char a[20];
     scanf("%s", a);
     printf("%d", f(a));
     return 0;
