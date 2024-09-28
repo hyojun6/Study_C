@@ -1,2 +1,6 @@
 #include <stdio.h>
-int main() {}
+int main() {
+  int a;
+
+  return 0;
+}
