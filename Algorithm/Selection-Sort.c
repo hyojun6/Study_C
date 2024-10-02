@@ -6,7 +6,7 @@ int main() {
     for(i=n; i>=0; i--) {
         k=i;
         for(j=i-1; j>=0; j--) {
-            if(list[j]<list[k])
+            if(list[j]>list[k])
                 k=j;
         }
         temp=list[i];
