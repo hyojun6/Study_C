@@ -5,7 +5,6 @@ int main() {
     int list[4]={4,5,1,2};
     for(i=n; i>=0; i--) {
         k=i;
-        
         for(j=i-1; j>=0; j--) {
             if(list[j]>list[k])
                 k=j;
