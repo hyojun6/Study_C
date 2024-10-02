@@ -12,7 +12,6 @@ int main() {
             }
         }
     }
-
     for(i=0; i<n; i++)
         printf("%d ",list[i]);
     return 0;

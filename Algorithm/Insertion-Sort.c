@@ -7,7 +7,6 @@ int main() {
         key=list[i];
         for(j=i-1; j>=0 && list[j]>key; j--)
             list[j+1]=list[j];
-
         list[j+1]=key;
     }
     for(i=0; i<n; i++)
