@@ -1,4 +1,4 @@
-#include <stdio.h> //삽입정렬
+#include <stdio.h> //삽입정렬 
 
 int main() {
     int i,j,n=4,temp,key;

@@ -8,7 +8,7 @@ int main() {
         for(j=i-1; j>=0; j--) {
             if(list[j]>list[k])
                 k=j;
-        }
+        } 
         temp=list[i];
         list[i]=list[k];
         list[k]=temp;
