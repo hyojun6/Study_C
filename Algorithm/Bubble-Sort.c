@@ -1,6 +1,6 @@
 #include <stdio.h> //버블정렬
 
-int main( {
+int main() {
     int i,j,n=4,temp;
     int list[4]={4,5,1,2};
 

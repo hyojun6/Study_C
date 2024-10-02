@@ -3,9 +3,9 @@
 int main() {
     int i,j,n=4,k,temp;
     int list[4]={4,5,1,2};
-    for(i=0; i<n-1; i++) {
+    for(i=n; i>=0; i--) {
         k=i;
-        for(j=i+1; j<n; j++) {
+        for(j=i-1; j>=0; j--) {
             if(list[j]<list[k])
                 k=j;
         }
@@ -13,8 +13,7 @@ int main() {
         list[i]=list[k];
         list[k]=temp;
     }
-    for(i=0; i<n; i++) {
+    for(i=0; i<n; i++)
         printf("%d ",list[i]);
-    }
     return 0;
 }
