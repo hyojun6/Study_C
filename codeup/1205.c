@@ -18,7 +18,6 @@ int main(void) {
       result *= n1;
     if (result > max)
       max = result;
-
     ch = n1;
     n1 = n2;
     n2 = ch;
