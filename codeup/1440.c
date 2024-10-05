@@ -11,7 +11,8 @@ int main(void) {
     for (j = 1; j <= n; j++) {
       if (i == j) {
       } else {
-        printf((num[i] < num[j]) ? "< " : num[i] == num[j] ? "= " : "> ");
+        printf((num[i] < num[j]) ? "< "
+          : num[i] == num[j] ? "= " : "> ");
       }
     }
     printf("\n");

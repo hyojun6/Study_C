@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int n;
 
 char f(int n) {
