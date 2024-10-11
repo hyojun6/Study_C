@@ -4,7 +4,6 @@
 int num[21];
 
 long long int f(int n) {
-
   return num[n] = num[n-1] + num[n-2];
 }
 
