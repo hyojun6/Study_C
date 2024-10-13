@@ -19,9 +19,7 @@ void f(long long n) {
       if(num<max_length) {
         result_num = num;
         max_length = length;
-      }
-    }
-  }
+      }}}
   else if(n%2==0){
     n/=2;
     length++;
@@ -36,7 +34,6 @@ void f(long long n) {
 int main(void) {
   long long a,b;
   scanf("%lld %lld", &a, &b);
-
   memoreset();
 
   for(long long i=a; i<=b; i++) {
