@@ -35,14 +35,12 @@ int main(void) {
   long long a,b;
   scanf("%lld %lld", &a, &b);
   memoreset();
-
   for(long long i=a; i<=b; i++) {
     length = 0;
     num=i;
     f(i);
   } 
 
-  
   printf("%lld %lld", result_num, max_length);
   return 0;
 }
