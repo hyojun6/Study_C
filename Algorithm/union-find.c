@@ -7,9 +7,8 @@ int init(int n) {
 }
 
 int find(int a) {
-  if(parent[a] != a) {
+  if(parent[a] != a)
     parent[a] = find(parent[a]);
-  }
   return parent[a];
 }
 
@@ -26,18 +25,15 @@ int main() {
 
   for(i=0; i<m; i++) {
     scanf("%d %d", &a, &b);
-    if(find(a) != find(b)) {
+    if(find(a) != find(b))
       union_sets(a, b);
-    }
   }
 
   scanf("%d %d", &a, &b);
-  if(find(a) != find(b)) {
+  if(find(a) != find(b))
     printf("NO");
-  } else {
+  else
     printf("YES");
-  }
-
 
   return 0;
 }
