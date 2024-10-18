@@ -2,8 +2,7 @@
 long long int memo[26];
 
 long long int f(int n) {
-  if(memo[n])
-    return memo[n];
+  if(memo[n]) return memo[n];
   if(n==1) return 1;
   if(n==2) return 2;
   if(n==3) return 4;
