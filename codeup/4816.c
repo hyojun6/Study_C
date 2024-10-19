@@ -8,9 +8,10 @@ int main(void) {
   time %= 60;
   c = time / 10;
   time %= 10;
-  if (time != 0) {
-    printf("-1");
-  } else {
-    printf("%d %d %d", a, b, c); }
+  // if (time != 0)
+  //   printf("-1");
+  // else
+  //   printf("%d %d %d", a, b, c);
+  printf((time != 0) ? "-1" : "%d %d %d", a, b, c);
   return 0;
 }
