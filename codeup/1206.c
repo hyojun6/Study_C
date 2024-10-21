@@ -12,6 +12,9 @@ int main(void) {
     return 0;
   }
   printf("none");
+  //printf((c % a == 0) ? "%d*%d=%d", a, c / a, c : (a % c == 0) ? "%d*%d=%d", c, a / c, a : "none");
+
+  
 
   return 0;
 }
