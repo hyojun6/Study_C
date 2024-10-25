@@ -7,4 +7,5 @@ int main(void) {
   (1900<=n && 2000>n) ? (a=1) : (a=3); //1 or 3
   (a==1) ? (n-=1900) : (n-=2000);
   printf("%d %d", n, a);
+  return 0;
 }

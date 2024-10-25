@@ -1,8 +1,8 @@
 #include <stdio.h>
+
 int main(void) {
   int a;
   scanf("%d", &a);
-  
   if (a == 11 || a == 12 || a == 13)
     printf("%dth", a);
   else if (a % 10 == 1)
