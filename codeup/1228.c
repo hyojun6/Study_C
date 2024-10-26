@@ -7,13 +7,11 @@ int main(void) {
   double avm = (k - 100) * 0.9;
   double result = (m - avm) * 100 / avm;
 
-  if (result > 20) {
+  if (result > 20)
     printf("비만\n");
-  } else if (result > 10) {
+  else if (result > 10)
     printf("과체중\n");
-  } else {
+  else
     printf("정상\n");
-  }
-
   return 0;
 }
