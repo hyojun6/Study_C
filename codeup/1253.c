@@ -7,8 +7,7 @@ int main(void) {
     a = b;
     b = ch;
   }
-  for (int i = a; i <= b; i++) {
+  for (int i = a; i <= b; i++)
     printf("%d ", i);
-  }
   return 0;
 }
