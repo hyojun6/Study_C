@@ -10,15 +10,15 @@ int main(void) {
     avw = (h-150)/2 + 50;
   else
     avw = (h-100) * 0.9;
-
   result = (w - avw) * 100 / avw;
 
-  if(result <= 10)
-    printf("정상");
-  else if(result <=20)
-    printf("과체중");
-  else
-    printf("비만");
+  // if(result <= 10)
+  //   printf("정상");
+  // else if(result <=20)
+  //   printf("과체중");
+  // else
+  //   printf("비만");
+  printf((result <= 10) ? "정상" : (result <= 20) ? "과체중" : "비만");
 
   return 0;
 }
