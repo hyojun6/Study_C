@@ -7,9 +7,8 @@ int main(void) {
   scanf("%d", &a);
   for(int i=1; i<=a; i++) {
     scanf("%d", &num);
-    if(num%2!=0) {
+    if(num%2!=0)
       sum++;
-    }
   }
   printf("%d", sum);
   return 0;
