@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 long long int f(int k) {
-  if(k <= 2) return 1;
-  return f(k-2)+f(k-1);
+  return (k<=2) ? 1 : f(k-2)+f(k-1);
 }
 
 int main() {
