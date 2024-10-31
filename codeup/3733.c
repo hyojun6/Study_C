@@ -1,7 +1,7 @@
 #include <stdio.h>
 long long num, length; //현제 우박수, 우박수길이
 long long result_num, max_length; //출력될 우박수, 길이
-int max = 100000001
+#define max 100000001
 long long memo[max];
 
 void memoreset() {
