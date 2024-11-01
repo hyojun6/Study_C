@@ -6,8 +6,7 @@ long long memo[max];
 
 void memoreset() {
   for(int i=0; i<=max; i++)
-    memo[i] = -1;
-}
+    memo[i] = -1; }
 
 void f(long long n) {
   if(n==1) {
@@ -40,7 +39,6 @@ int main(void) {
     num=i;
     f(i);
   } 
-
   printf("%lld %lld", result_num, max_length);
   return 0;
 }
