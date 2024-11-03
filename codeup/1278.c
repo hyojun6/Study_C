@@ -21,7 +21,6 @@
 
 //     return 0;
 // }
-
 #include <stdio.h>
 int main(void) {
     int num;
@@ -31,6 +30,7 @@ int main(void) {
         num /= 10;
         i++;
     }
+
     printf("%d", i);
     return 0;
 }
