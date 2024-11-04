@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-  int num;
+  int num = 0;
   int result;
   scanf("%d", &num);
   result = num/10;
