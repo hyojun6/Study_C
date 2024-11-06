@@ -11,9 +11,8 @@ int main(void) {
   while (ch[i] != '\0') {
     if (ch[i] == 'c' || ch[i] == 'C') {
       c++;
-      if (ch[i - 1] == 'c' || ch[i - 1] == 'C') {
+      if (ch[i - 1] == 'c' || ch[i - 1] == 'C')
         cc++;
-      }
     }
     i++;
   }
