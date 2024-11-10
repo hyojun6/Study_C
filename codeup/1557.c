@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int n;
 
 int f(int n) {
@@ -11,8 +10,7 @@ int f(int n) {
   return num+1;
 }
 
-int main()
-{
+int main() {
   scanf("%d", &n);
   printf("%d\n", f(n));
   return 0;
