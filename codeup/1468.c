@@ -7,12 +7,10 @@ int main(void) {
   for (int i = 1; i <= a; i++) {
 
     for (int j = a - 1; j >= 0; j--) {
-      if (i % 2 == 0) {
+      if (i % 2 == 0)
         printf("%d ", 1 + a * (i - 1) + j);
-
-      } else {
+      else
         printf("%d ", num);
-      }
       num++;
     }
     printf("\n");

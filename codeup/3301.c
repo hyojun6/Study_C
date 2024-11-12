@@ -18,10 +18,12 @@ int f(int n) {
   n = n % 50;
   num += n / 10;
   n = n % 10;
-  return num; }
+  return num;
+}
 
 int main(void) {
   int price;
   scanf("%d", &price);
   printf("%d", f(price));
-  return 0; }
+  return 0;
+}
